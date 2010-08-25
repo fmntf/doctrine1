@@ -49,7 +49,7 @@ class Doctrine_Import_Pgsql_TestCase extends Doctrine_UnitTestCase
         $this->import->listTableColumns('table');
         
         $this->assertEqual($this->adapter->pop(), "SELECT
-		                                             ordinal_position as attnum,
+                                                     ordinal_position as attnum,
                                                      column_name as field,
                                                      udt_name as type,
                                                      data_type as complete_type,
